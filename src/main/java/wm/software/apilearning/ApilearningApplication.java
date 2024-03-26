@@ -12,7 +12,7 @@ public class ApilearningApplication {
 	
 	ApiService apiService = new ApiService();
 	
-	@GetMapping("/hello")
+	@GetMapping("/data")
     public String test(){
 		String data = apiService.getApiData();
         return data;

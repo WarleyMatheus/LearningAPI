@@ -15,12 +15,12 @@ public class ClientService {
     }
 
     public void salvarCliente(Client client){
-        validarCliente(client);
+        clientValidation(client);
         this.repository.persist(client);
     }
 
-    public void validarCliente(Client client){
-        //aplica validações
+    public void clientValidation(Client client){
+        //Aply validations
     }
 
 }

@@ -3,12 +3,14 @@ package wm.software.apilearning;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import wm.software.service.ApiService;
 
 @SpringBootApplication
 @RestController
+@ComponentScan({"wm.software.controller", "wm.software.apilearning", "wm.software.service", "wm.software.repository"})
 public class ApilearningApplication {
 	
 	ApiService apiService = new ApiService();

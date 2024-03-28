@@ -10,7 +10,7 @@ import wm.software.service.ApiService;
 
 @SpringBootApplication
 @RestController
-@ComponentScan({"wm.software.controller", "wm.software.apilearning", "wm.software.service", "wm.software.repository"})
+@ComponentScan({"wm.software.*"})
 public class ApilearningApplication {
 	
 	ApiService apiService = new ApiService();

@@ -2,7 +2,6 @@ package wm.software.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Profile;
 
 import wm.software.service.ApiService;
 

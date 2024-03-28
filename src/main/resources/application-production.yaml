@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: production
+  application:
+    name: Production Version
+    
+server:
+  port: 8081
+

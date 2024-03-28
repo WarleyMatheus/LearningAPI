@@ -2,7 +2,6 @@ package wm.software.service;
 
 import wm.software.model.Client;
 import wm.software.repository.ClientRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service

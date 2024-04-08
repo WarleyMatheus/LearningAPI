@@ -21,7 +21,7 @@ public class ApilearningApplication {
 	public String appPropertiesTest(){
 		return appName;
 	}
-
+	
 	public static void main(String[] args) {
 		SpringApplication.run(ApilearningApplication.class, args);
 	}

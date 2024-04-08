@@ -1,3 +1,9 @@
 spring:
   application:
     name: Development environment
+    
+  datasource:
+    url: jdbc:postgresql://localhost:5444/postgres
+    driverClassName: org.postgresql.Driver
+    username: warley
+    password: libera

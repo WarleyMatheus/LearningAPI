@@ -1,14 +1,12 @@
 package wm.software.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter 
+@Setter
 public class Client {
+	
 	private String name;
-
-    public String getNome() {
-        return name;
-    }
-
-    public void setNome(String name) {
-        this.name = name;
-    }
 
 }

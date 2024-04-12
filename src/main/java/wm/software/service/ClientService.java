@@ -9,8 +9,7 @@ public class ClientService {
 	
 	private ClientRepository repository;
 	
-	public ClientService(ClientRepository clientRepository) {
-		this.repository = clientRepository;
+	public ClientService() {
 	}
 
     public void salvarCliente(Client client){
@@ -19,7 +18,7 @@ public class ClientService {
     }
 
     public void clientValidation(Client client){
-        //Aply validations
+        //Apply validations
     }
 
 }

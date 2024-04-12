@@ -8,14 +8,14 @@ import org.springframework.stereotype.Service;
 public class ClientService {
 	
 	private ClientRepository repository;
-
-    public ClientService(ClientRepository repository){
-        this.repository = repository;
-    }
+	
+	public ClientService(ClientRepository clientRepository) {
+		this.repository = clientRepository;
+	}
 
     public void salvarCliente(Client client){
         clientValidation(client);
-        this.repository.persist(client);
+        this.repository.save(client);
     }
 
     public void clientValidation(Client client){

@@ -3,7 +3,14 @@ spring:
     name: Development environment
     
   datasource:
-    url: jdbc:postgresql://localhost:5444/postgres
-    driverClassName: org.postgresql.Driver
+    driver-class-name: org.postgresql.Driver
+    password: password
+    url: jdbc:postgresql://localhost:5444/Warley
     username: warley
-    password: libera
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
